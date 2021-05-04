@@ -1,22 +1,32 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
 
-const routes: Array<RouteRecordRaw> = [
+const routeOptions = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    meta: {
+      // use meta data to set the layout
+      layout: "AppLayoutDefault",
+    },
   },
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    meta: {
+      layout: "AppLayoutDefault",
+    },
   },
+  //define new routes here
 ];
+
+// making use of route level code-splitting
+const routes: Array<RouteRecordRaw> = routeOptions.map((route) => {
+  return {
+    ...route,
+    component: () =>
+      import(/* webpackChunkName: "[request]" */ `@/views/${route.name}.vue`),
+  };
+});
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

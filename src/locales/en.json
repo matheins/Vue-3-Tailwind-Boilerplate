@@ -1,0 +1,8 @@
+{
+  "components": {
+    "navigation": {
+      "dashboard": "Dashboard",
+      "about": "About Us"
+    }
+  }
+}

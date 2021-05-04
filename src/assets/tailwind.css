@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-primary-dark focus:ring-primary-light;
+  }
+
+  .btn-secondary {
+    @apply text-secondary-dark bg-indigo-100 hover:bg-secondary-light focus:ring-secondary;
+  }
+}
