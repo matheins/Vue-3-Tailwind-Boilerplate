@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1620160438876" clover="3.2.0">
+  <project timestamp="1620160438876" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2" elements="20" coveredelements="20" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="post.ts" path="/Users/matyasheins/Documents/Development/Business/GrapeCheck/market-ui/src/entities/post/post.ts">
+      <metrics statements="10" coveredstatements="10" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="10" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="6" type="stmt"/>
+      <line num="14" count="7" type="stmt"/>
+      <line num="15" count="7" type="stmt"/>
+      <line num="17" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="6" type="stmt"/>
+      <line num="23" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
