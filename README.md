@@ -51,6 +51,7 @@ You can register common components wich will automatically be registered globall
 | Prop      | Type    | Default | Description                                                                                                              |
 | --------- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
 | primary   | boolean | true    | Sets primary color scheme                                                                                                |
+| minimal   | boolean |         | Sets minimal (white) color scheme                                                                                        |
 | secondary | boolean |         | Sets secondary color scheme                                                                                              |
 | to        | string  |         | Denotes the target route of the link                                                                                     |
 | icon      | string  |         | Adds an icon to the button. (Use PascalCase convention of [Heroicons](https://heroicons.com/) + 'Icon'. F.e. 'MailIcon') |
