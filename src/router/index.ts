@@ -1,23 +1,23 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routeOptions = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     meta: {
       // use meta data to set the layout
-      layout: "AppLayoutDefault",
+      layout: 'AppLayoutDefault',
     },
   },
   {
-    path: "/about",
-    name: "About",
+    path: '/about',
+    name: 'About',
     meta: {
-      layout: "AppLayoutDefault",
+      layout: 'AppLayoutDefault',
     },
   },
   //define new routes here
-];
+]
 
 // making use of route level code-splitting
 const routes: Array<RouteRecordRaw> = routeOptions.map((route) => {
@@ -25,12 +25,12 @@ const routes: Array<RouteRecordRaw> = routeOptions.map((route) => {
     ...route,
     component: () =>
       import(/* webpackChunkName: "[request]" */ `@/views/${route.name}.vue`),
-  };
-});
+  }
+})
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-});
+})
 
-export default router;
+export default router

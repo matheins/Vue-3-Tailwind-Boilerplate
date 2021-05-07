@@ -1,5 +1,5 @@
-import * as api from "@/services";
+import * as api from '@/services'
 
 export default function useServices() {
-  return api;
+  return api
 }

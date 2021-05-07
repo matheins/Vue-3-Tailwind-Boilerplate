@@ -1,10 +1,10 @@
-import { Post } from "@/entities";
-import { ModelApiService } from "../api";
+import { Post } from '@/entities'
+import { ModelApiService } from '../api'
 
 class PostsService extends ModelApiService<Post> {
   constructor() {
-    super("posts");
+    super('posts')
   }
 }
 
-export const posts = new PostsService();
+export const posts = new PostsService()

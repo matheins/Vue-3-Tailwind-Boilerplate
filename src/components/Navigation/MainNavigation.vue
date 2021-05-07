@@ -1,8 +1,8 @@
 <template>
   <Disclosure
+    v-slot="{ open }"
     as="nav"
     class="bg-white border-b border-gray-200"
-    v-slot="{ open }"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <MainNavigationMobileMenu :navigation="navigation" v-show="open" />
+    <MainNavigationMobileMenu v-show="open" :navigation="navigation" />
   </Disclosure>
 </template>
 

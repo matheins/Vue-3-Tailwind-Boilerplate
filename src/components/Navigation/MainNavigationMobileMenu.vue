@@ -4,8 +4,8 @@
       <router-link
         v-for="item in navigation"
         :key="item.name"
-        :to="item.to"
         v-slot="{ isExactActive, href, navigate }"
+        :to="item.to"
         custom
       >
         <a
@@ -29,14 +29,14 @@
 
 <script>
 export default {
-  name: "MainNavigationMobileMenu",
+  name: 'MainNavigationMobileMenu',
   props: {
     navigation: {
       type: Array,
       required: true,
     },
   },
-};
+}
 </script>
 
 <style></style>

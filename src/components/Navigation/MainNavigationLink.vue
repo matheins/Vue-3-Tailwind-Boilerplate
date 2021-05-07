@@ -1,8 +1,8 @@
 <template>
   <router-link
     :key="name"
-    :to="to"
     v-slot="{ isExactActive, href, navigate }"
+    :to="to"
     custom
   >
     <a
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "MainNavigationLink",
+  name: 'MainNavigationLink',
   props: {
     name: {
       type: String,
@@ -38,7 +38,7 @@ export default {
       required: true,
     },
   },
-};
+}
 </script>
 
 <style></style>

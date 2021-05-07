@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import MainNavigation from "@/components/Navigation/MainNavigation.vue";
+import MainNavigation from '@/components/Navigation/MainNavigation.vue'
 export default {
+  name: 'DefaultLayout',
   components: { MainNavigation },
-  name: "DefaultLayout",
-};
+}
 </script>
