@@ -1,0 +1,19 @@
+{
+  "components": {
+    "navigation": {
+      "dashboard": "Dashboard",
+      "about": "About Us"
+    }
+  },
+  "views": {
+    "home": {
+      "posts": {
+        "headline": "Posts list",
+        "button": {
+          "reset": "Reset",
+          "reload": "Reload"
+        }
+      }
+    }
+  }
+}
